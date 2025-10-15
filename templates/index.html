@@ -4,19 +4,57 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        h4 {
+        font-size: 30px
+        }
         .h2-text {
         color: red
         }
+        .h3-text {
+        color: yellow
+        }
+        #h1-text {
+        font-size: 60px
+        }
+        div.python a {
+        color: green
+        }
+        ul li {
+        color: green
+        }
+        input[type="text"] {
+        background-color: magenta
+        }
+        input[type="text"]:hover {
+        background-color: green
+        }
+        a:hover {
+        color: red
+        }
+        div form textarea[placeholder="Text"]:hover {
+        color: magenta
+        }
+        li::marker {
+        color: red
+        }
+        ul > li:nth-child(2) {
+        color: blue
+        }
+
     </style>
+
 </head>
 <body>
-<div>
+<div class="python">
     <h1 id="h1-text">H1 Text</h1>
-    <h2 class="h2-text">H2 Text</h2>
-    <h3 class="h2-text">H3 Text</h3>
-    <h4>H4 Text</h4>
-    <h5>H5 Text</h5>
-    <h6>H6 Text</h6>
+    <h1 id="h-text2">H1 Text</h1>
+    <h1 id="h-text2">H11 Text</h1>
+    <h2 class="h2-text">H3 Text</h2>
+    <h2 class="h2-text">H4 Text</h2>
+    <h3 class="h2-text h3-text">H3 Text</h3>
+    <h4>H5 Text</h4>
+    <h5>H6 Text</h5>
+    <h6>H7 Text</h6>
     <p>Чтобы найти <span style="color: green">«Настройки разработчика» </span>(Developer settings) в GitHub, нажмите на
         изображение вашего профиля в
         правом
@@ -24,7 +62,7 @@
         разработчика»
         (Developer settings) в левой боковой панели. </p>
     <a href="https://www.google.com/search?q=%D0%B3%D0%B4%D0%B5+Developer+settings+%D0%B2+github&sca_esv=f63f0269e32ece13&sxsrf=AE3TifMxy-KM_yvSA8mpXEc5kHeYXoE3tA%3A1760014118764&ei=Jq_naM25LoGzwPAPisO18QI&ved=0ahUKEwjN5OTCk5eQAxWBGRAIHYphLS4Q4dUDCBE&uact=5&oq=%D0%B3%D0%B4%D0%B5+Developer+settings+%D0%B2+github&gs_lp=Egxnd3Mtd2l6LXNlcnAiI9Cz0LTQtSBEZXZlbG9wZXIgc2V0dGluZ3Mg0LIgZ2l0aHViMggQABiABBiiBDIIEAAYgAQYogQyCBAAGIAEGKIESPAaUABY6A5wAHgBkAEAmAGRAaAB4AOqAQMzLjK4AQPIAQD4AQH4AQKYAgWgAu8DwgIGEAAYBxgewgIIEAAYBxgIGB7CAggQABgFGAcYHsICBRAAGO8FwgIIEAAYogQYiQWYAwCSBwMzLjKgB58YsgcDMy4yuAfvA8IHAzAuNcgHCg&sclient=gws-wiz-serp"
-       target="blank">Ссылка</a>
+       target="blank">Python</a>
     <img alt="picture.png" src="https://photofile.ru/wp-content/uploads/2024/04/1684700436047.png" style="width: 250px">
     <ul>
         <li>Item1</li>
@@ -61,6 +99,20 @@
         </tbody>
     </table>
 
+</div>
+<div class="java script">
+    <a href="https://habr.com/ru/companies/intel/articles/258779/" target="blank">Java Script</a>
+    <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+    </ul>
+</div>
+<div class="nth">
+    <p>1</p>
+    <p>2</p>
+    <h6>3</h6>
+    <p>4</p>
 </div>
 </body>
 </html>
