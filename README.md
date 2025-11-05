@@ -23,16 +23,20 @@
 # 📂 Структура проекта
 
 ```bash
-project/
-│── tests/
-│   ├── test_example.py
-│── pages/
-│   ├── base_page.py
-│   ├── login_page.py
-│── utils/
-│   ├── helpers.py
-│── conftest.py
-│── requirements.txt
+autotests-ui/
+├── automation/
+│   ├── pages/
+│   │   ├── base_page.py
+│   │   └── registration_page.py
+│   ├── tests/
+│   │   └── test_registration.py
+│   ├── utils/
+│   └── conftest.py
+│
+├── .github/workflows/tests.yml
+├── requirements.txt
+├── pytest.ini
+└── README.md
 ```
 
 # ✅ Реализовано
