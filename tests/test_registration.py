@@ -28,9 +28,6 @@ def test_successful_registration():
         context.storage_state(path='browser-state.json')
         import subprocess
 
-        subprocess.run("python -m json.tool browser-state.json > tmp.json && move tmp.json browser-state.json",
-                       shell=True)
-
         page.wait_for_timeout(1000)
 
     with sync_playwright() as playwright:
