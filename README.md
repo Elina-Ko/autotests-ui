@@ -64,13 +64,19 @@ pip install -r requirements.txt
 playwright install
 ```
 
-3️⃣ Запуск тестов
+3️⃣ Запуск фреймворка
 
 ```bash
-pytest -s -v
+pytest automation/tests -s -v
 ```
 
-4️⃣ Allure отчёт (если установлен Allure CLI)
+4️⃣ Запуск учебных тестов
+
+```bash
+pytest tests -s -v
+```
+
+5️⃣ Allure отчёт (если установлен Allure CLI)
 
 ```bash
 allure serve allure-results

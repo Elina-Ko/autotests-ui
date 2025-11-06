@@ -1,3 +1,4 @@
+import pytest
 import os
 import time
 from automation.pages.registration_page import RegistrationPage
@@ -5,8 +6,10 @@ from automation.pages.registration_page import RegistrationPage
 STATE_FILE = "browser-state.json"
 
 
-def test_successful_registration(page):
-    reg = RegistrationPage(page)
+@pytest.mark.regression
+@pytest.mark.registration
+def test_successful_registration(ui_page):
+    reg = RegistrationPage(ui_page)
 
     # Если сессия уже есть — просто проверяем, что dashboard доступен
     if os.path.exists(STATE_FILE):
